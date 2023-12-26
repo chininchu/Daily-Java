@@ -10,6 +10,7 @@ public class Main {
         System.out.println(Accumul.accum("abcd"));
 
 
+
     }
 
 

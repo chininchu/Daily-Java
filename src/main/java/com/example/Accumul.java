@@ -16,19 +16,34 @@ public class Accumul {
 
         StringBuilder result = new StringBuilder();
 
+
         for (int i = 0; i < s.length(); i++) {
             char currentChar = s.charAt(i);
 
-            for (int j = 0; j <= i; j++){
+            // Append the upper version of the character
+            result.append(Character.toUpperCase(currentChar));
 
-                result.append(currentChar);
+
+            for (int j = 0; j < i; j++) {
+
+                //Append the lowercase version to the current version which is "i"
+
+
+                result.append(Character.toLowerCase(currentChar));
 
             }
+
+            if (i < s.length() - 1) {
+
+                result.append("-");
+
+
+            }
+
 
         }
 
         return result.toString();
-
 
 
     }
