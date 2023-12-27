@@ -9,6 +9,8 @@ public class Main {
 
         System.out.println(Accumul.accum("abcd"));
 
+        System.out.println(Troll.disemvowel("andrew"));
+
 
 
     }
