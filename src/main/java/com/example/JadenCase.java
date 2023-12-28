@@ -10,32 +10,24 @@ public class JadenCase {
 
             char currentChar = phrase.charAt(i);
 
-            stringBuilder.append(currentChar);
 
-            char nextChar = (char) Character.toLowerCase(i + 1);
+            if (i == 0) {
 
-
-
+                stringBuilder.append(currentChar);
 
 
+            }else if (currentChar == Character.toUpperCase(currentChar)) {
 
 
-            if (Character.isWhitespace(currentChar)) {
+                char lowerCase = Character.toLowerCase(currentChar);
+                stringBuilder.append(lowerCase);
 
-                stringBuilder.append(nextChar);
+            } else {
 
-
-
-
-
-
+                stringBuilder.append(currentChar);
 
 
             }
-
-
-
-
 
 
         }
