@@ -28,6 +28,8 @@ public class SquareDigit {
 
             result.append((int) digit);
 
+            // Test
+
 
         }
 
