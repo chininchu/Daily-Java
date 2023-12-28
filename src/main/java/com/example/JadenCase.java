@@ -8,15 +8,34 @@ public class JadenCase {
 
         for (int i = 0; i < phrase.length(); i++) {
 
-            char ch = phrase.charAt(i);
+            char currentChar = phrase.charAt(i);
 
-            if (ch == ' ') {
+            stringBuilder.append(currentChar);
 
-                char lowerCase = (char) Character.toLowerCase(ch);
+            char nextChar = (char) Character.toLowerCase(i + 1);
 
-                stringBuilder.append(lowerCase);
+
+
+
+
+
+
+            if (Character.isWhitespace(currentChar)) {
+
+                stringBuilder.append(nextChar);
+
+
+
+
+
+
+
 
             }
+
+
+
+
 
 
         }
