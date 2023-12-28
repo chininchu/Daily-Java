@@ -26,7 +26,7 @@ public class SquareDigit {
 
             double digit = Math.pow(Character.getNumericValue(numberStr.charAt(i)), 2);
 
-            result.append(digit);
+            result.append((int) digit);
 
 
         }
