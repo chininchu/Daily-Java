@@ -11,10 +11,14 @@ public class Main {
 //
 //        System.out.println(Troll.disemvowel("andrew"));
 
-        JadenCase jadenCase = new JadenCase();
+//        JadenCase jadenCase = new JadenCase();
+//
+//        System.out.println(jadenCase.toJadenCase(" my name is andrew"
+//        ));
 
-        System.out.println(jadenCase.toJadenCase(" my name is andrew"
-        ));
+        SquareDigit squareDigit = new SquareDigit();
+
+        System.out.println(squareDigit.squareDigits(65478909));
 
 
     }
