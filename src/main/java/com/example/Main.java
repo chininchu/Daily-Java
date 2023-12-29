@@ -16,9 +16,11 @@ public class Main {
 //        System.out.println(jadenCase.toJadenCase(" my name is andrew"
 //        ));
 
-        SquareDigit squareDigit = new SquareDigit();
+//        SquareDigit squareDigit = new SquareDigit();
+//
+//        System.out.println(squareDigit.squareDigits(65478909));
 
-        System.out.println(squareDigit.squareDigits(65478909));
+        System.out.println(DuplicateEncoder.encode("test"));
 
 
     }
