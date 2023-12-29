@@ -20,7 +20,7 @@ public class Main {
 //
 //        System.out.println(squareDigit.squareDigits(65478909));
 
-        System.out.println(DuplicateEncoder.encode("test"));
+        System.out.println(DuplicateEncoder.encode("andrewe"));
 
 
     }

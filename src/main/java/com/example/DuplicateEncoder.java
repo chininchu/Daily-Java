@@ -12,13 +12,29 @@ public class DuplicateEncoder {
 
     static String encode(String word) {
 
+        // Convert to lowercase
+
+        word = word.toLowerCase();
+
         Map<Character, Integer> charCounts = new HashMap<>();
 
         StringBuilder result = new StringBuilder();
 
+
+        // Count all characters
+
         for (char c : word.toCharArray()) {
 
             charCounts.put(c, charCounts.getOrDefault(c, 0) + 1);
+
+
+        }
+
+        // Second pass: Build the encoded string
+
+
+        for (char c : word.toCharArray()) {
+
 
             if (charCounts.get(c) > 1) {
 
