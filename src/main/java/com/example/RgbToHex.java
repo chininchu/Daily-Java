@@ -13,7 +13,15 @@ public class RgbToHex {
         b = Math.max(0, Math.min(b, 255));
 
 
-        return null;
+        // Convert each RGB component to a 2-digit hexadecimal string
+
+
+        String redHex = String.format("%02X", r);
+        String greenHex = String.format("%02X", g);
+        String blueHex = String.format("%02X", b);
+
+        // Concatenate the hexadecimal strings
+        return "#" + redHex + greenHex + blueHex;
 
 
     }
