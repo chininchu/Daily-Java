@@ -6,8 +6,7 @@ public class Main {
 
         System.out.println(RgbToHex.rgb(255, 255, 255));
 
-        Kata.createPhoneNumber(new int[] {1,2,3});
-
+        System.out.println(Kata.createPhoneNumber(new int[]{1, 2, 3, 4, 5, 6, 7, 7, 4, 2}));
 
 
     }

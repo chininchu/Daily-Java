@@ -21,6 +21,14 @@ public class Kata {
                 result.append("(");
 
 
+            } else if (i == 3) {
+
+                result.append(") ");
+
+            } else if (i == 6) {
+
+                result.append("-");
+
             }
 
 
@@ -30,7 +38,7 @@ public class Kata {
         }
 
 
-        return null;
+        return result.toString();
 
 
     }
