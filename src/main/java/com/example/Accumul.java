@@ -12,6 +12,8 @@ public class Accumul {
 
 
 
+
+
     public static String accum(String s) {
 
         // We will loop thru the String
