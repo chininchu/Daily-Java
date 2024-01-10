@@ -13,30 +13,30 @@ public class Conversion {
 
     public String solution(int n) {
 
-        // Create a HasMap and store the Symbol as the Key and the value as the number.
 
-        Map<Integer, Character> SymbolValue = new HashMap<>();
+        String[] ones = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+        String[] tens = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
+        String[] hundreds = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
+        String[] thousands = {"", "M", "MM", "MMM"};
 
-        SymbolValue.put(1, 'I');
-        SymbolValue.put(5, 'V');
-        SymbolValue.put(10, 'X');
-        SymbolValue.put(50, 'L');
-        SymbolValue.put(100, 'C');
-        SymbolValue.put(500, 'D');
-        SymbolValue.put(1000, 'M');
+        StringBuilder stringBuilder = new StringBuilder();
 
-        StringBuilder result = new StringBuilder();
 
-        for (Map.Entry<Integer, Character> entry : SymbolValue.entrySet()) {
+        if (n >= 1 && n <= 3999) {
 
-            int key = entry.getKey();
-            char value = entry.getValue();
+
+            String result = thousands[n / 1000] +
+                    hundreds[(n % 1000) / 100] +
+                    tens[(n % 100) / 10] +
+                    ones[n % 10];
+
+
+            stringBuilder.append(result);
 
 
         }
 
-
-        return " ";
+        return stringBuilder.toString();
 
 
     }

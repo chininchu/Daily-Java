@@ -8,7 +8,7 @@ public class Main {
 
         Conversion conversion = new Conversion();
 
-        System.out.println(conversion.solution(1000));
+        System.out.println(conversion.solution(10));
 
 
     }
