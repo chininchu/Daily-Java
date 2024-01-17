@@ -2,16 +2,22 @@ package com.example;
 
 // Complete the solution so that it splits the string into pairs of two characters. If the string contains an odd number of characters then it should replace the missing second character of the final pair with an underscore ('_').
 
-import java.lang.reflect.Array;
+
+
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class StringSplit {
 
     public static String[] solution(String s) {
 
 
-        StringBuilder stringBuilder = new StringBuilder();
 
-        System.out.println(stringBuilder);
+        List<Character> list = new ArrayList<>();
+
+        System.out.println(list);
+
 
         int counter = 0;
 
@@ -20,8 +26,34 @@ public class StringSplit {
 
             char ch = s.charAt(i);
 
+            list.add(ch);
+
+            counter++;
+
+            if (counter % 2 == 0) {
+
+                list.add(',');
+
+
+            }
+
 
         }
+
+
+        if (counter % 2 != 0) {
+
+            list.add('_');
+
+
+        }
+
+
+        System.out.println(list.toString());
+
+
+
+
 
 
         return null;

@@ -10,7 +10,7 @@ public class Main {
 //
 //        System.out.println(conversion.solution(10));
 
-        StringSplit.solution("Andy");
+        System.out.println(StringSplit.solution("Andyy"));
 
 
     }
